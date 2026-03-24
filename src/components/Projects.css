@@ -64,6 +64,12 @@
   margin: 0 auto;
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .project-item {
   padding: 2.5rem;
   border: 1px solid rgba(255, 0, 0, 0.2);

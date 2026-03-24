@@ -7,37 +7,39 @@ const Projects = () => {
   const completedProjects = [
     {
       title: "ShibaSwap",
-      description: "The official decentralized exchange of the Shiba Inu ecosystem. It allows users to trade tokens, provide liquidity, and earn rewards through decentralized finance (DeFi)."
+      description: "The official decentralized exchange of the Shiba Inu ecosystem. It allows users to trade tokens, provide liquidity, and earn rewards through decentralized finance (DeFi).",
+      link: "https://coinmarketcap.com/exchanges/shibaswap/"
     },
     {
       title: "LEASH Token",
-      description: "One of the first tokens introduced after SHIB. It was designed to support the ecosystem and provide additional benefits to long-term holders."
+      description: "One of the first tokens introduced after SHIB. It was designed to support the ecosystem and provide additional benefits to long-term holders.",
+      link: "https://shib.io/tokens"
     },
     {
       title: "BONE Token",
-      description: "Used for governance. This means the community can vote on decisions related to the project and its future development."
+      description: "Used for governance. This means the community can vote on decisions related to the project and its future development.",
+      link: "https://coinmarketcap.com/currencies/bone-shibaswap/"
     }
   ]
 
   const ongoingProjects = [
     {
       title: "Shibarium",
-      description: "A Layer-2 blockchain built to make transactions faster and cheaper. It helps developers build decentralized applications using the Shiba Inu ecosystem."
+      description: "A Layer-2 blockchain built to make transactions faster and cheaper. It helps developers build decentralized applications using the Shiba Inu ecosystem.",
+      link: "https://docs.shib.io"
     },
     {
-      title: "Shiba Inu Metaverse",
-      description: "Focused on creating a virtual digital world where users can buy virtual land, interact with others, and explore new blockchain-based experiences."
+      title: "Shiba Metaverse",
+      description: "Focused on creating a virtual digital world where users can buy virtual land, interact with others, and explore new blockchain-based experiences.",
+      link: "https://shib.io"
     }
   ]
 
   const upcomingProjects = [
     {
-      title: "SHIB-Based Web3 Applications",
-      description: "The ecosystem is planning to expand into Web3 platforms, decentralized apps, and digital services that will support the global crypto community."
-    },
-    {
-      title: "Community Governance Expansion",
-      description: "The team is working on improving governance systems so users can directly participate in decision-making."
+      title: "Web3 Ecosystem Projects",
+      description: "The ecosystem is planning to expand into Web3 platforms, decentralized applications, and digital services that support the global crypto community.",
+      link: "https://shib.io"
     }
   ]
 
@@ -73,11 +75,13 @@ const Projects = () => {
           </div>
           <div className="projects-grid">
             {completedProjects.map((project, index) => (
-              <div key={index} className="project-item completed">
-                <div className="status-badge">Completed</div>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
+              <a key={index} href={project.link} target="_blank" rel="noreferrer" className="project-link">
+                <div className="project-item completed">
+                  <div className="status-badge">Completed</div>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </a>
             ))}
           </div>
         </section>
@@ -90,11 +94,13 @@ const Projects = () => {
           </div>
           <div className="projects-grid">
             {ongoingProjects.map((project, index) => (
-              <div key={index} className="project-item ongoing">
-                <div className="status-badge">In Progress</div>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
+              <a key={index} href={project.link} target="_blank" rel="noreferrer" className="project-link">
+                <div className="project-item ongoing">
+                  <div className="status-badge">In Progress</div>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </a>
             ))}
           </div>
         </section>
@@ -107,11 +113,13 @@ const Projects = () => {
           </div>
           <div className="projects-grid">
             {upcomingProjects.map((project, index) => (
-              <div key={index} className="project-item upcoming">
-                <div className="status-badge">Upcoming</div>
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-              </div>
+              <a key={index} href={project.link} target="_blank" rel="noreferrer" className="project-link">
+                <div className="project-item upcoming">
+                  <div className="status-badge">Upcoming</div>
+                  <h3>{project.title}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </a>
             ))}
           </div>
         </section>
