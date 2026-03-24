@@ -1,16 +1,82 @@
-# React + Vite
+# Shiba Inu Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Introduction
+This is a React + Vite based interactive Shiba Inu (SHIB) themed website. It includes a 3D dog model experience, animated sections, live crypto market data, social links, and multiple pages (Home, About, Projects) with responsive UI.
 
-Currently, two official plugins are available:
+## Contents Used in Development
+- Frontend framework: React 19
+- Build tool: Vite 7
+- Routing: react-router-dom
+- 3D rendering: three, @react-three/fiber, @react-three/drei
+- Animation: gsap, @gsap/react, ScrollTrigger
+- Charting: Chart.js (CDN)
+- Icons: Remix Icon CDN
+- Styling: Custom CSS in App.css and component styles
+- Pages and components:
+	- Home page with SHIB content, live chart, and live market panel
+	- About page with SHIB overview and creator links
+	- Projects page with completed, ongoing, and upcoming project cards
+	- Reusable navbar and background music control
+- Data APIs:
+	- SHIB market chart (30 days): CoinGecko market_chart endpoint
+	- SHIB live market stats: CoinGecko coin details endpoint
+- Environment configuration:
+	- VITE_API_KEY
+	- VITE_SHIB_CHART_URL
+	- VITE_SHIB_STATS_URL
+- Media and static assets:
+	- 3D model files and textures in public/models and public/matcap
+	- Background images and section images in public/
+	- Music file in src/assets
+	- Brand/logo image in src/assets
+- Tooling:
+	- ESLint with React hooks and React refresh plugins
+	- npm scripts: dev, build, lint, preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Interactive 3D SHIB-themed hero with scroll-based transitions
+- SHIB live market data panel with auto refresh every 10 seconds
+- SHIB 30-day price line chart with smooth animation
+- Responsive layout for desktop and mobile
+- Background music control (play/pause)
+- External links for project references and social profiles
 
-## React Compiler
+## Project Structure
+- src/pages/Home.jsx
+- src/components/About.jsx
+- src/components/Projects.jsx
+- src/components/Dog.jsx
+- src/components/DogAbout.jsx
+- src/components/Navbar.jsx
+- src/components/BackgroundMusic.jsx
+- src/App.jsx
+- src/App.css
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run Locally
+1. Install dependencies:
 
-## Expanding the ESLint configuration
+```bash
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Start development server:
+
+```bash
+npm run dev
+```
+
+3. Build for production:
+
+```bash
+npm run build
+```
+
+4. Preview production build:
+
+```bash
+npm run preview
+```
+
+## Notes
+- The `.env` file is ignored by git. Keep API keys there.
+- If port 5173 is in use, Vite may auto-switch to another port.
