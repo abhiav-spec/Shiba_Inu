@@ -4,34 +4,30 @@ import { Canvas } from '@react-three/fiber'
 import './About.css'
 
 const About = () => {
-  const projects = [
+  const tokenInfo = [
     {
-      title: "Tomorrowland",
-      year: "2020 - ONGOING"
+      title: "Launch Year",
+      value: "2020"
     },
     {
-      title: "Navy Pier",
-      year: "2020 - ONGOING"
+      title: "Founder",
+      value: "Ryoshi (Anonymous)"
     },
     {
-      title: "MSI Chicago",
-      year: "2020 - ONGOING"
+      title: "Blockchain",
+      value: "Ethereum (ERC-20)"
     },
     {
-      title: "This Was Louise's Phone",
-      year: "2020 - ONGOING"
+      title: "Type",
+      value: "Decentralized Cryptocurrency"
     },
     {
-      title: "KIKK Festival 2018",
-      year: "2020 - ONGOING"
+      title: "Total Supply",
+      value: "~589 Trillion SHIB"
     },
     {
-      title: "The Kennedy Center",
-      year: "2020 - ONGOING"
-    },
-    {
-      title: "Royal Opera Of Wallonia",
-      year: "2020 - ONGOING"
+      title: "All-Time High",
+      value: "October 2021"
     }
   ]
 
@@ -52,44 +48,92 @@ const About = () => {
       </Canvas>
       <div className="about-page">
         <section className="about-hero">
-          <h1>About Us</h1>
+          <h1>About Shiba Inu (SHIB)</h1>
           <p className="hero-subtitle">
-            We are a multidisciplinary creative studio at the intersection <br />
-            of art, design and technology.
+            Shiba Inu (SHIB) is a decentralized cryptocurrency launched in 2020 and built on the Ethereum blockchain. <br />
+            Created as a community-driven digital token, it has grown into a global ecosystem supported by millions.
           </p>
         </section>
 
         <section className="about-content">
           <div className="content-grid">
             <div className="content-block">
-              <h2>Our Mission</h2>
+              <h2>Key Information</h2>
               <p>
-                We create immersive digital experiences that push the boundaries of 
-                creativity and technology. Our work combines artistic vision with 
-                cutting-edge technical expertise to deliver memorable brand experiences.
+                Launch Year: 2020 <br />
+                Founder: Ryoshi (anonymous developer) <br />
+                Blockchain: Ethereum (ERC-20 token) <br />
+                Type: Decentralized cryptocurrency <br />
+                Community: SHIB Army
               </p>
             </div>
 
             <div className="content-block">
-              <h2>Our Approach</h2>
+              <h2>Market & Supply Data</h2>
               <p>
-                Every project is a collaboration between design, technology, and art. 
-                We believe in creating experiences that resonate with audiences and 
-                leave a lasting impression through innovation and creativity.
+                Total Supply: About 589 trillion SHIB tokens <br />
+                Circulating Supply: Over 589 trillion tokens <br />
+                Market Cap: Billions of dollars <br />
+                Launch Date: August 2020 <br />
+                All-Time High: October 2021
+              </p>
+            </div>
+
+            <div className="content-block">
+              <h2>How Shiba Inu Works</h2>
+              <p>
+                SHIB uses blockchain technology to let users send, receive, and store digital assets securely without central control. 
+                Since it runs on Ethereum, users can trade SHIB, keep it in crypto wallets, use it in decentralized applications, 
+                and participate in community governance.
+              </p>
+            </div>
+
+            <div className="content-block">
+              <h2>Official Ecosystem Website</h2>
+              <p>
+                Explore the official SHIB ecosystem platform for updates, token details, and Web3 developments.
+              </p>
+              <a className="official-link" href="https://shib.io" target="_blank" rel="noreferrer">
+                Visit Official Website
+              </a>
+            </div>
+            <div className="content-block">
+              <h2>Core Vision</h2>
+              <p>
+                The project focuses on decentralization, transparency, and innovation,
+                offering users a modern digital platform for secure transactions and
+                blockchain-based applications.
               </p>
             </div>
           </div>
         </section>
 
         <section className="projects-section">
-          <h2>Our Work</h2>
+          <h2>Token Information</h2>
           <div className="projects-grid">
-            {projects.map((project, index) => (
+            {tokenInfo.map((project, index) => (
               <div key={index} className="project-card">
-                <small>{project.year}</small>
+                <small>{project.title}</small>
                 <h3>{project.title}</h3>
+                <p>{project.value}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="creator-section">
+          <h2>Created By</h2>
+          <p>Abhinav Kumar</p>
+          <div className="social-links">
+            <a href="https://instagram.com/abhinavkumar" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <i className="ri-instagram-line"></i>
+            </a>
+            <a href="https://linkedin.com/in/abhinav-kumar" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i className="ri-linkedin-box-line"></i>
+            </a>
+            <a href="https://github.com/abhiav-spec" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <i className="ri-github-line"></i>
+            </a>
           </div>
         </section>
       </div>

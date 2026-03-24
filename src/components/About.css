@@ -62,6 +62,20 @@
   color: rgba(245, 245, 245, 0.8);
 }
 
+.official-link {
+  width: fit-content;
+  text-decoration: none;
+  color: whitesmoke;
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  padding: 0.6rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.official-link:hover {
+  border-color: rgba(255, 0, 0, 0.9);
+  background-color: rgba(255, 0, 0, 0.08);
+}
+
 .projects-section {
   padding: 6rem 2.5rem;
   border-top: 1px solid rgba(255, 0, 0, 0.396);
@@ -109,6 +123,56 @@
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.4;
+}
+
+.project-card p {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.5;
+  color: rgba(245, 245, 245, 0.85);
+}
+
+.creator-section {
+  padding: 4rem 2.5rem 6rem;
+  border-top: 1px solid rgba(255, 0, 0, 0.396);
+  text-align: center;
+}
+
+.creator-section h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 0.7rem;
+}
+
+.creator-section p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: whitesmoke;
+  border: 1px solid rgba(255, 0, 0, 0.35);
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s linear;
+}
+
+.social-links a:hover {
+  border-color: rgba(255, 0, 0, 0.9);
+  background-color: rgba(255, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
 /* Responsive Design */
