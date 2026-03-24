@@ -1,0 +1,23 @@
+.music-control {
+  position: fixed;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  z-index: 30;
+}
+
+.music-button {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
+  color: whitesmoke;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+
+.music-button:hover {
+  border-color: rgba(255, 0, 0, 1);
+  background: rgba(255, 0, 0, 0.14);
+}
