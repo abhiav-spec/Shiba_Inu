@@ -32,7 +32,7 @@ function Home() {
           <Navbar />
           <div className="middle">
             <div className="left">
-              <h1>WE <br /> Make <br /> Good <br />Shit</h1>
+              <h1>WHAT IS <br /> SHIBA <br /> INU <br /> (SHIB)?</h1>
             </div>
             <div className="right"></div>
           </div>
@@ -40,9 +40,9 @@ function Home() {
             <div className="left"></div>
             <div className="right">
               <p>
-                Dogstudio is a multidisciplinary <br />
-                creative studio at the intersection <br />
-                of art, design and technology.
+                Shiba Inu (SHIB) is a decentralized <br />
+                ERC-20 token on Ethereum, built and <br />
+                driven by a global community.
               </p>
             </div>
           </div>
@@ -54,32 +54,32 @@ function Home() {
         <section id='section-2' >
           <div className="titles">
             <div img-title="tomorrowland" className="title">
-              <small>2020 - ONGOING</small>
-              <h1>Tomorrowland</h1>
+              <small>OVERVIEW</small>
+              <h1>Launched in 2020 by Ryoshi</h1>
             </div>
             <div img-title="navy-pier" className="title">
-              <small>2020 - ONGOING</small>
-              <h1> Navy Pier</h1>
+              <small>BLOCKCHAIN</small>
+              <h1>Built on Ethereum as ERC-20</h1>
             </div>
             <div img-title="msi-chicago" className="title">
-              <small>2020 - ONGOING</small>
-              <h1>  MSI Chicago</h1>
+              <small>HOW IT WORKS</small>
+              <h1>Secure peer-to-peer transactions</h1>
             </div>
             <div img-title="phone" className="title">
-              <small>2020 - ONGOING</small>
-              <h1>This Was Louise's Phone</h1>
+              <small>UTILITY</small>
+              <h1>Wallets, trading, dApps, governance</h1>
             </div>
             <div img-title="kikk" className="title">
-              <small>2020 - ONGOING</small>
-              <h1>KIKK Festival 2018</h1>
+              <small>KEY FEATURE</small>
+              <h1>Decentralized and community-driven</h1>
             </div>
             <div img-title="kennedy" className="title">
-              <small>2020 - ONGOING</small>
-              <h1>The Kennedy Center</h1>
+              <small>KEY FEATURE</small>
+              <h1>Blockchain security and transparency</h1>
             </div>
             <div img-title="opera" className="title">
-              <small>2020 - ONGOING</small>
-              <h1>Royal Opera Of Wallonia</h1>
+              <small>ECOSYSTEM</small>
+              <h1>DeFi, tokens, and future Web3 apps</h1>
             </div>
           </div>
 
