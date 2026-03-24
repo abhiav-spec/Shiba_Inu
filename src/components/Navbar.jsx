@@ -31,6 +31,9 @@ const Navbar = () => {
       <div className={styles.navElem}>
         <Link to="/about">About Us</Link>
       </div>
+      <div className={styles.navElem}>
+        <Link to="/projects">Projects</Link>
+      </div>
     </nav>
   )
 }
