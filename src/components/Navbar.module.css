@@ -39,14 +39,19 @@
   width: 100%;
 }
 
-.navElem svg {
-  max-width: 5rem;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  transition: transform 0.3s linear;
+.brandLink::after {
+  display: none;
 }
 
-.navElem svg:hover {
+.brandName {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: transform 0.3s linear;
+  display: inline-block;
+}
+
+.brandName:hover {
   transform: scale(1.05);
 }
