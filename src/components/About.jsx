@@ -125,10 +125,10 @@ const About = () => {
           <h2>Created By</h2>
           <p>Abhinav Kumar</p>
           <div className="social-links">
-            <a href="https://instagram.com/abhinavkumar" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/bellaciao4286/?hl=en" target="_blank" rel="noreferrer" aria-label="Instagram">
               <i className="ri-instagram-line"></i>
             </a>
-            <a href="https://linkedin.com/in/abhinav-kumar" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/abhinav-kumar-a74779284/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <i className="ri-linkedin-box-line"></i>
             </a>
             <a href="https://github.com/abhiav-spec" target="_blank" rel="noreferrer" aria-label="GitHub">
